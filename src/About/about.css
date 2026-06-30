@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.about{
+  margin-top: 60px;
+    background:#f5f7fb;
+    padding:80px 8%;
+}
+
+.about-container{
+    display:flex;
+    gap:50px;
+    align-items:flex-start;
+}
+
+/* Left */
+
+.about-left{
+    width:35%;
+    position:sticky;
+    top:100px;
+}
+
+.profile-image{
+    width:100%;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+}
+
+/* Right */
+
+.about-right{
+    width:65%;
+}
+
+.info-card{
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    margin-bottom:35px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-6px);
+}
+
+.info-card h2{
+    color:#1b9b8e;
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.experience{
+    margin-bottom:25px;
+}
+
+.experience h3{
+    font-size:24px;
+    color:#222;
+}
+
+.experience span{
+    display:block;
+    color:#777;
+    margin:10px 0 18px;
+    font-weight:600;
+}
+
+.experience p{
+    color:#555;
+    line-height:1.9;
+    text-align:justify;
+    font-size:17px;
+}
+
+hr{
+    margin:30px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.education{
+    margin-bottom:30px;
+    padding-left:20px;
+    border-left:4px solid #1b9b8e;
+}
+
+.education h3{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.education p{
+    color:#555;
+    margin-bottom:8px;
+}
+
+.education span{
+    color:#1b9b8e;
+    font-weight:600;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.about-container{
+    flex-direction:column;
+}
+
+.about-left,
+.about-right{
+    width:100%;
+}
+
+.about-left{
+    position:static;
+}
+
+.profile-image{
+    max-width:350px;
+    display:block;
+    margin:auto;
+}
+
+.info-card{
+    padding:25px;
+}
+
+.info-card h2{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:600px){
+
+.about{
+    padding:60px 5%;
+}
+
+.experience p{
+    font-size:15px;
+}
+
+.info-card h2{
+    font-size:24px;
+}
+
+.experience h3{
+    font-size:20px;
+}
+
+}

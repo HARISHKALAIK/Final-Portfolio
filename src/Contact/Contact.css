@@ -1,0 +1,593 @@
+/* SECTION */
+.contact-section {
+  margin-top: 30px;
+  width: 100%;
+  min-height: 100vh;
+  background: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 8%;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.contact-container {
+  width: 100%;
+  max-width: 1350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  animation: slideLeft 1s ease;
+}
+
+/* TITLE */
+.contact-left h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: #000;
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/* UNDERLINE */
+.contact-left h1::after {
+  content: "";
+  width: 120px;
+  height: 4px;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  border-radius: 10px;
+}
+
+/* DESCRIPTION */
+.contact-desc {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 35px;
+  max-width: 600px;
+}
+
+/* FORM */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* INPUT */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  background: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* FOCUS */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 350px;
+  padding: 15px;
+  border: 2px solid #000;
+  border-radius: 16px;
+  background: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* BUTTON HOVER */
+.contact-form button:hover {
+  background: black;
+  color: white;
+  transform: translateY(-5px);
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+  animation: slideRight 1s ease;
+}
+
+/* RIGHT TITLE */
+.contact-right h2 {
+  font-size: 45px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+/* RIGHT DESCRIPTION */
+.right-desc {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 500px;
+}
+
+/* ROW */
+
+/* CARD */
+
+
+/* CARD HOVER */
+
+
+/* ICON */
+
+
+
+/* ANIMATION */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(80px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+
+  .contact-container {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .contact-left h1 {
+    font-size: 45px;
+  }
+
+  .contact-right h2 {
+    font-size: 36px;
+  }
+
+ 
+}
+
+@media (max-width: 600px) {
+
+  .contact-section {
+    padding: 40px 5%;
+  }
+
+  .contact-left h1 {
+    font-size: 38px;
+  }
+
+  .contact-desc,
+  .right-desc {
+    font-size: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+ 
+  
+}
+/* ============================
+   CONTACT RIGHT
+============================ */
+
+.contact-right{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    gap:25px;
+}
+
+/* ============================
+   TITLE
+============================ */
+
+.contact-title{
+    font-size:4.2rem;
+    font-weight:800;
+    line-height:1.05;
+    color:#111;
+    margin:0;
+}
+
+.contact-title span{
+    color:transparent;
+    -webkit-text-stroke:2px #111;
+}
+
+/* ============================
+   DESCRIPTION
+============================ */
+
+.right-desc{
+    max-width:600px;
+    font-size:18px;
+    line-height:1.8;
+    color:#666;
+    margin:0;
+}
+
+/* ============================
+   CONTACT LINKS
+============================ */
+
+.contact-link{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    text-decoration:none;
+    color:#111;
+    font-size:1.4rem;
+    font-weight:600;
+    transition:all .3s ease;
+}
+
+.contact-link:hover{
+    color:#1b9b8e;
+    transform:translateX(8px);
+}
+
+.contact-icon{
+    font-size:26px;
+    min-width:30px;
+}
+
+/* ============================
+   SOCIAL ICONS
+============================ */
+
+.social-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    margin-top:10px;
+}
+
+.social-links a{
+    font-size:34px;
+    color:#111;
+    transition:all .3s ease;
+}
+
+.social-links a:hover{
+    color:#1b9b8e;
+    transform:translateY(-5px) scale(1.15);
+}
+
+/* ============================
+   LARGE LAPTOP
+============================ */
+
+@media(max-width:1200px){
+
+.contact-title{
+    font-size:3.8rem;
+}
+
+.right-desc{
+    font-size:17px;
+}
+
+}
+
+/* ============================
+   TABLET
+============================ */
+
+@media(max-width:992px){
+
+.contact-right{
+    align-items:center;
+    text-align:center;
+}
+
+.contact-title{
+    font-size:3.2rem;
+}
+
+.right-desc{
+    max-width:90%;
+    font-size:16px;
+}
+
+.contact-link{
+    justify-content:center;
+    font-size:1.25rem;
+}
+
+.social-links{
+    justify-content:center;
+}
+
+}
+
+/* ============================
+   MOBILE
+============================ */
+
+@media(max-width:768px){
+
+.contact-title{
+    font-size:2.6rem;
+}
+
+.contact-title span{
+    -webkit-text-stroke:1.5px #111;
+}
+
+.right-desc{
+    font-size:15px;
+    line-height:1.7;
+}
+
+.contact-link{
+    font-size:1.1rem;
+    gap:14px;
+}
+
+.contact-icon{
+    font-size:22px;
+}
+
+.social-links{
+    gap:18px;
+}
+
+.social-links a{
+    font-size:28px;
+}
+
+}
+
+/* ============================
+   SMALL MOBILE
+============================ */
+
+@media(max-width:480px){
+
+.contact-title{
+    font-size:2rem;
+}
+
+.right-desc{
+    font-size:14px;
+}
+
+.contact-link{
+    font-size:16px;
+    word-break:break-word;
+}
+
+.contact-icon{
+    font-size:20px;
+}
+
+.social-links a{
+    font-size:25px;
+}
+
+}
+
+
+/* ===========================
+   CONTACT RIGHT
+=========================== */
+
+.contact-right{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    animation:slideRight 1s ease;
+}
+
+/* TITLE */
+
+.contact-title{
+    font-size:4.5rem;
+    font-weight:800;
+    line-height:1.05;
+    color:#111;
+    margin-bottom:25px;
+}
+
+.contact-title span{
+    color:transparent;
+    -webkit-text-stroke:2px #111;
+}
+
+/* DESCRIPTION */
+
+.right-desc{
+    font-size:18px;
+    color:#666;
+    line-height:1.8;
+    max-width:560px;
+    margin-bottom:35px;
+}
+
+/* CONTACT ITEMS */
+
+.contact-link{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    margin-bottom:25px;
+    text-decoration:none;
+    color:#111;
+    font-size:1.8rem;
+    font-weight:700;
+    transition:.3s;
+}
+
+.contact-link:hover{
+    color:#1b9b8e;
+    transform:translateX(8px);
+}
+
+.contact-icon{
+    font-size:28px;
+    color:#111;
+    transition:.3s;
+}
+
+.contact-link:hover .contact-icon{
+    color:#1b9b8e;
+}
+
+/* SOCIAL */
+
+.social-links{
+    display:flex;
+    align-items:center;
+    gap:22px;
+    margin-top:10px;
+}
+
+.social-links a{
+    font-size:34px;
+    color:#111;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    color:#1b9b8e;
+    transform:translateY(-6px) scale(1.15);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.contact-container{
+    flex-direction:column;
+    gap:60px;
+}
+
+.contact-right{
+    align-items:center;
+    text-align:center;
+}
+
+.contact-title{
+    font-size:3.5rem;
+}
+
+.right-desc{
+    max-width:100%;
+}
+
+.contact-link{
+    justify-content:center;
+    font-size:1.5rem;
+}
+
+.social-links{
+    justify-content:center;
+}
+
+}
+
+@media(max-width:768px){
+
+.contact-title{
+    font-size:2.7rem;
+}
+
+.contact-title span{
+    -webkit-text-stroke:1.5px #111;
+}
+
+.right-desc{
+    font-size:16px;
+}
+
+.contact-link{
+    font-size:1.2rem;
+    gap:14px;
+}
+
+.contact-icon{
+    font-size:22px;
+}
+
+.social-links a{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:480px){
+
+.contact-title{
+    font-size:2.2rem;
+}
+
+.right-desc{
+    font-size:14px;
+}
+
+.contact-link{
+    font-size:16px;
+    word-break:break-word;
+}
+
+.contact-icon{
+    font-size:20px;
+}
+
+.social-links{
+    gap:16px;
+}
+
+.social-links a{
+    font-size:24px;
+}
+
+}
