@@ -1,6 +1,6 @@
 import React from "react";
 import "../../src/Home/Home.css";
-import heroImg from "../../src/assets/harish.jpeg";
+import heroImg from "../../src/assets/hari.png";
 import { FaLinkedin,  FaGithub} from "react-icons/fa";
 import Skills from "../Skills/Skills";
 import Projects from "../Projects/Projects";

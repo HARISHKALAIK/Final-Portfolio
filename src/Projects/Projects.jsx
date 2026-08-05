@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import skillimg from "../assets/skills.png";
 
 import gymImg from "../assets/gyy.jpg";
 import restaurantImg from "../assets/res.jpg";
@@ -43,8 +44,8 @@ const projectsData = [
     title: "Skillsquare Act Assessment",
     desc: "SkillSquare is a comprehensive career development and talent assessment platform designed to help students, colleges, and organizations identify strengths, bridge skill gaps, and improve employability. The platform provides assessment-driven insights, personalized learning recommendations, career guidance, and placement readiness support through an intuitive web-based interface. It aims to connect education with industry requirements by enabling skill evaluation, career planning, mentoring, and workforce development solutions.",
     github: "https://github.com/yourprofile/gym-management",
-    visit: "https://your-gym-demo.com",
-    image: gymImg,
+    visit: "https://skillsquare-vvhj.vercel.app/",
+    image: skillimg,
   },
 ];
 
