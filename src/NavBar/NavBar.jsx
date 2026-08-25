@@ -18,7 +18,6 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Navigation items
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -48,12 +47,19 @@ function Navbar() {
               </Link>
             </li>
           ))}
+
+          {/* MOBILE RESUME BUTTON */}
+          <li className="mobile-resume">
+            <a href="/resume.pdf" className="resume-btn" download>
+              Download Resume
+            </a>
+          </li>
         </ul>
 
-        {/* RESUME BUTTON */}
+        {/* DESKTOP RESUME BUTTON */}
         <a
           href="/resume.pdf"
-          className="resume-btn"
+          className="resume-btn desktop-resume"
           download
         >
           Download Resume
@@ -64,7 +70,7 @@ function Navbar() {
           className="menu-toggle"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          ☰
+          {menuOpen ? "✕" : "☰"}
         </div>
 
       </div>

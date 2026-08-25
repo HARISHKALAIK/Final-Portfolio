@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import skillimg from "../assets/skills.png";
-
+import wavesmist from "../assets/waves.png"
 import gymImg from "../assets/gyy.jpg";
 import restaurantImg from "../assets/res.jpg";
 import groceryImg from "../assets/gro.jpg";
@@ -47,6 +47,13 @@ const projectsData = [
     visit: "https://skillsquare-vvhj.vercel.app/",
     image: skillimg,
   },
+  {
+  title: "Waves and Mist",
+  desc: "Waves and Mist is a serene coastal getaway designed to offer a relaxing escape surrounded by the beauty of the sea, misty landscapes, and refreshing natural surroundings. The platform showcases comfortable stays, scenic views, and memorable experiences for travelers looking to unwind away from the busy city life. It provides visitors with an easy way to explore accommodation options, discover nearby attractions, and plan a peaceful seaside stay.",
+  github: "https://github.com/yourprofile/waves-and-mist",
+  visit: "https://www.wavesmist.com/",
+  image: wavesmist,
+},
 ];
 
 function ProjectCard({ project, onClick }) {

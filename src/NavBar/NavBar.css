@@ -220,3 +220,57 @@
     font-size: 24px;
   }
 }
+/* Desktop */
+.mobile-resume {
+  display: none;
+}
+
+.desktop-resume {
+  display: inline-flex;
+}
+
+.resume-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: 0.3s ease;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .desktop-resume {
+    display: none;
+  }
+
+  .mobile-resume {
+    display: block;
+    margin-top: 15px;
+  }
+
+  .mobile-resume .resume-btn {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .nav-links {
+    /* your existing mobile styles */
+  }
+
+  .nav-links.open {
+    /* your existing open-menu styles */
+  }
+}
+@media (max-width: 768px) {
+  .mobile-resume .resume-btn {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+}
