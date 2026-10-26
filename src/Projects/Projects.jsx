@@ -7,6 +7,8 @@ import gymImg from "../assets/gyy.jpg";
 import restaurantImg from "../assets/res.jpg";
 import groceryImg from "../assets/gro.jpg";
 import mobileImg from "../assets/mo.jpg";
+import Smart from "../assets/smart.png";
+import Stark from "../assets/stark.png";
 
 const projectsData = [
   {
@@ -26,13 +28,19 @@ const projectsData = [
   },
 
   {
-    title: "Deevipani Grocery Shop",
-    desc: "Engineered a full-stack grocery e-commerce platform featuring product browsing, shopping cart, wishlist,and end-to-end order management.Built Admin and Super Admin dashboards covering inventory control, category management, billing, and order lifecycle tracking. Integrated AWS S3 for image storage, OTP-based authentication for secure login, and Razorpay for seamless online payment processing.",
-    github: "https://github.com/yourprofile/deevipani-grocery",
-    visit: "https://devwebapp.deevipani.com/",
-    image: groceryImg,
+    title: "Stark Elevators Bangalore",
+    desc: "Stark NextGen Elevators is a modern corporate website developed to showcase the company's elevator solutions, products, and services through a professional and user-friendly digital platform. The website focuses on creating a strong online presence with a clean interface, visually appealing layouts, and easy navigation.",
+    github: "https://github.com/HARISHKALAIK/stark-elevators.git",
+    visit: "https://stark-elevators.vercel.app/",
+    image: Stark,
   },
-
+   {
+    title: "Smart Fix AI",
+    desc: "SmartFix AI is an AI-powered web application designed to help users identify technical issues and find suitable solutions through an intelligent, user-friendly platform. The project aims to simplify troubleshooting by providing an intuitive interface where users can explore features, understand the problem-solving process, and interact with an AI chatbot for assistance.",
+    github: "https://github.com/HARISHKALAIK/SmartFix-AI.git",
+    visit: "https://smart-fix-ai-lftf.vercel.app/",
+    image: Smart,
+  },
   {
     title: "Hello Mobile Shop",
     desc: "A mobile shop website developed to showcase smartphones, accessories, offers, customer orders, invoice generation, and responsive product management features.",
