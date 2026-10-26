@@ -5,7 +5,6 @@ import skillimg from "../assets/skills.png";
 import wavesmist from "../assets/waves.png"
 import gymImg from "../assets/gyy.jpg";
 import restaurantImg from "../assets/res.jpg";
-import groceryImg from "../assets/gro.jpg";
 import mobileImg from "../assets/mo.jpg";
 import Smart from "../assets/smart.png";
 import Stark from "../assets/stark.png";
